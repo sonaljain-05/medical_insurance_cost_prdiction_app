@@ -27,7 +27,7 @@ with col1:
 with col2:
     st.markdown("<h1 style='color:#0ba8b0;'>Medical Prediction App</h1>", unsafe_allow_html=True)
 
-    st.image("picture\globe.png", width=50)
+    st.image("picture/globe.png", width=50)
 
     region = st.selectbox("Region", ["northeast", "northwest", "southeast", "southwest"])
 
