@@ -16,7 +16,7 @@ div[data-testid="stRadio"] label {
 </style>
 """, unsafe_allow_html=True)
 
-img = Image.open("picture\medical.png")
+img = Image.open("picture/medical.png")
 img = img.resize((500, 900))
 
 col1, col2 = st.columns(2)
@@ -31,19 +31,19 @@ with col2:
 
     region = st.selectbox("Region", ["northeast", "northwest", "southeast", "southwest"])
 
-    st.image("picture\age.png", width=50)
+    st.image("picture/age.png", width=50)
     age = st.selectbox("Age", list(range(1, 101)), index=26)
 
-    st.image("picture\bmi.png", width=50)
+    st.image("picture/bmi.png", width=50)
     bmi = st.number_input("BMI", 10.0, 60.0, 24.0)
 
-    st.image("picture\children.png", width=50)
+    st.image("picture/children.png", width=50)
     children = st.number_input("Children", 0, 10, 0)
 
-    st.image("picture\sex.png", width=50)
+    st.image("picture/sex.png", width=50)
     sex = st.radio("Sex", ["male", "female"])
 
-    st.image("picture\smoker.png", width=50)
+    st.image("picture/smoker.png", width=50)
     smoker = st.radio("Smoker", ["yes", "no"])
 
     sex = 1 if sex == "male" else 0
